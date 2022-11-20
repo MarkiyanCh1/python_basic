@@ -27,38 +27,35 @@ while counter < 1:
 
 # 2
 while True:
-    first_data = str(input(f"Enter the first operand: "))
-    second_data = str(input(f"Enter the second operand: "))
+    number_1 = str(input(f"Enter the first operand: "))
+    number_2 = str(input(f"Enter the second operand: "))
     operation = str(input(f"Enter an operation/Enter exit to complete: "))
     if operation == "exit":
         print("The process is completed")
         break
-    if '.' in first_data:
-        operand_one = float(first_data)
+    if '.' in number_1:
+        number_1 = float(number_1)
     else:
-        operand_one = int(first_data)
+        number_1 = int(number_1)
 
-    if '.' in second_data:
-        operand_two = float(second_data)
+    if '.' in number_2:
+        number_2 = float(number_2)
     else:
-        operand_two = int(second_data)
+        number_2 = int(number_2)
 
+    print(number_1)
+    print(number_2)
     if operation == '+':
-        print(f'Result = {operand_one + operand_two}')
-
+        print(f'Result = {number_1 + number_2}')
     elif operation == '-':
-        print(f'Result = {operand_one - operand_two}')
-
-    elif operation == '/' and operand_two == 0:
-        print("You can't divide on zero")
-
-    elif operation == '/':
-        print(f'Result = {operand_one / operand_two}')
-
+        print(f'Result = {number_1 - number_2}')
     elif operation == '*':
-        print(f'Result = {operand_one * operand_two}')
-
+        print(f'Result = {number_1 * number_2}')
+    elif operation == '/' and number_2 == 0:
+        print("Error - You can't divide on zero")
+    elif operation == '/':
+        print(f'Result = {number_1 / number_2}')
     elif operation == '**':
-        print(f'Result = {operand_one ** operand_two}')
+        print(f'Result = {number_1 ** number_2}')
     else:
-        print(f"Invalid operation between numbers ")
+        print("Error - Incorrect sign")
