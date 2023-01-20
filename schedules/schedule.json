@@ -1,0 +1,16 @@
+[
+    {
+        "Arrival time": "18:20",
+        "Cost ticket": "450 UAH",
+        "Departure point": "Kyiv",
+        "Departure time": "12:30",
+        "Destination point": "Lviv"
+    },
+    {
+        "Arrival time": "17:10",
+        "Cost ticket": "470 UAH",
+        "Departure point": "Kyiv",
+        "Departure time": "11:05",
+        "Destination point": "Odesa"
+    }
+]
